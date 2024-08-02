@@ -1,73 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    padding-inline: 40px;
-}
-
 header{
     display: flex;
-    justify-content: space-between;
-}
-header .logo{
-    display: flex;
-    gap: 5px;
-}
-header .logo img{
-    height: 60px;
-    width: 90px;
-}
-header nav ul{
-    display: flex;
-    gap: 120px;
-}
-header nav ul li{
-    list-style: none;
-}
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-header .cart .icon{
-    height: 40px;
-}
-span{
-    display: block;
-}
-
-main{
-    display: flex;
-    gap: 33rem;
-    padding-top: 70px;
-}
-main section .main-content{
-    height: 250px;
-}
-main section button{
-    height: 50px;
-    width: 110px;
-}
-main section .buttons{
-    display: flex;
-    gap: 30px;
-}
-main section .buttons .price-button{
-    border: 2px solid purple;
+    justify-content: space-evenly;
     background-color: white;
 }
-main section .buttons .cart-button{
-    background-color: purple;
+.ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.ul_contact{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.contact{
+    background-color: teal;
+}
+.form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px 100px 0px 600px;
+}
+#list{
+    color: white;
+}
+.logo{
+    margin: 15px;
+    height: auto;
+}
+.shopping-cart {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    padding: 10px 0px 0px 0px;
+}
+.body{
+    display: flex;
+    padding: 150px 20px 0px 200px;
+}
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+    /* background-color: #f8f9fa; */
+}
+.container {
+    text-align: center;
+}
+.container h1:hover{
+color: red;
+}
+.foodlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.food-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.2s; */
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.food-item h2 {
+    margin: 10px 0;
+    font-size: 18px;
+ padding-right: 200px;
+}
+
+.food-item p {
+
+    margin: 5px 0;
+    font-size: 30px;
+padding-right: 200px;
+    color: lightcoral
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightcoral;
     color: white;
     border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-section .icons{
-    padding-top: 120px;
-    display: flex;
-    justify-content: end;
-    padding-right: 120px;
+
+button:hover {
+    background-color: rgb(209, 13, 151);
 }
-section .icons img{
-    height: 30px;
-    width: 50px;
+li{
+    padding: 0px 50px 0px 50px;
+}
+@media (min-width: 475px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 640px) {
+    header {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 1280px) {
+    header {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 1536) {
+    header {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
