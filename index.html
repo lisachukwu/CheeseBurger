@@ -8,29 +8,29 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="/images/logo.png" alt="logo">
-        </div>
         <div class="head">
             <nav>
                 <ul class="ul">
-                    <li>
+                    <li id="logo">
+                        <img src="/images/logo.jpeg" alt="logo">
+                    </li>
+                    <li id="home">
                         <a href="index.html">HOME </a>
 
                     </li>
-                    <li>
+                    <li id="menu">
                         <a href="menu.html">MENU</a> 
 
                     </li>
-                    <li>
+                    <li id="contact">
                         <a href="contact.html">CONTACT</a>
 
                     </li> 
                 </ul>
             </nav>
         </div>
-        <div class="shopping_cart">
-            <img src="/images/shopping cart.png" alt="Shopping Cart" class="shopping-cart">
+        <div>
+            <img src="/images/icon.png" alt="Shopping Cart" class="shopping-cart">
         </div>
     </header>
     <div class="body">
@@ -40,14 +40,15 @@
                 <br>sem scelerisque. Fusce orci risus, congue eu
                 <br>mauris nec, pretium tincidunt nulla.
             </p>
-            <button id="price">Rs.60</button>
-            <button id="add_to_cart">Add to Cart</button>
+            <div class="btn">
+                <button id="price">Rs.60</button>
+                <button id="add_to_cart">Add to Cart</button>
+            </div>
         </div>
-        <div>
-            <img src="images/hamm-removebg-preview.png" alt="Hamburger">
+        <div class="ham">
+            <img src="/images/cheese.png" alt="Hamburger">
         </div>
-        
-    
     </div>    
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
 </body>
 </html>

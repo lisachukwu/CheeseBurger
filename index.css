@@ -3,6 +3,9 @@ header{
     justify-content: space-evenly;
     background-color: white;
 }
+.logo{
+    padding: 0px 50px 20px 50px;
+}
 .ul{
     display: flex;
     gap: 40px;
@@ -16,6 +19,8 @@ header{
 a{
     text-decoration: none;
 }
+
+/* contact page */
 .contact{
     background-color: teal;
 }
@@ -27,13 +32,30 @@ a{
     width: 300px;
     padding: 10px;
     margin: 50px 100px 0px 600px;
+    justify-content: center;
+    border-radius: 10px;
 }
+#submit{
+    color: white;
+    background-color: teal;
+    justify-content: center; 
+    padding: 5px 120px 5px 120px;
+}
+.form_group{
+    padding: 5px 20px 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 60px 5px 60px;
+}
+#f1{
+    padding: 15px 15px 15px 15px;
+}
+
+
 #list{
     color: white;
-}
-.logo{
-    margin: 15px;
-    height: auto;
 }
 .shopping-cart {
     width: 28px;
@@ -43,7 +65,7 @@ a{
 }
 .body{
     display: flex;
-    padding: 150px 20px 0px 200px;
+    padding: 50px 20px 0px 200px;
 }
 .food{
     display: flex;
@@ -97,60 +119,144 @@ padding-right: 200px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: lightcoral;
-    color: white;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: rgb(209, 13, 151);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 li{
     padding: 0px 50px 0px 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
 }
+#logo{
+    width: 50px;
+    height: 50px;
+    padding-right: 350px;
+}
+#icon{
+    display: none;
+}
+h2{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+#price{
+    padding: 20px 55px 20px 55px;
+    border-color: darkorchid;
+    border-style: solid;
+    color: darkorchid;
+    margin-right: 35px;
+}
+#price:hover{
+    background-color: rgb(190, 114, 205);
+    color: white;
+}
+#add_to_cart{
+    padding: 20px 30px 20px 30px;
+    color: white;
+    background-color: darkorchid;
+    border-style: solid;
+    border-color: darkorchid;
+}
+#add_to_cart:hover{
+    background-color: rgb(190, 114, 205);
+    color: white;
+}
+.class{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cheese_note{
+    padding-right: 300px;
+}
+.ham{
+    height: 300px; /* Height of the div */
+    display: flex;
+    object-fit: fill;
+}
+
 @media (min-width: 475px) {
-    header{
+    #home{
+        display: none;
+        padding: 0%;
+    }
+
+    #menu{
+        display: none;
+        padding: 0%;
+    }
+    #contact{    
+        display: none;
+        padding: 0%;
+    }
+    #logo{
+        padding-left: 0%;
+    }
+    #cart{
+        padding-left: 0%;
+    }
+    .body{
+        display: grid;
+        padding-left: 10%;
+    }
+}
+
+@media (min-width: 640px) {
+    .ul {
+        justify-content: space-around;
+    }
+
+    .body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) {
+    .ul {
+        justify-content: space-evenly;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1024px) {
+    .body{
+        display: flex;
+    }
+    .ul{
+        display: flex;
+    }
+    .ham img {
+        max-width: 400px;
+    }
+
+    .btn button {
+        padding: 20px 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .ul {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    .btn button {
+        padding: 25px 35px;
     }
 }
-@media (min-width: 640px) {
-    header {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
+@media (min-width: 1536px) {
+    .ul{
+        display: flex;
     }
 }
-@media (min-width: 768px) {
-    header {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-@media (min-width: 1024px) {
-    header {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-@media (min-width: 1280px) {
-    header {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-@media (min-width: 1536) {
-    header {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
+
